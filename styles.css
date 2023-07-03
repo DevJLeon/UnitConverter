@@ -1,8 +1,3 @@
-.result{
-  height: 30px;
-  border: 1px solid black;
-}
-
 .row div{
   margin: 10px 0px 0px 0px;
 }
@@ -10,4 +5,18 @@
 .equals{
   display: flex;
   justify-content: center;
+}
+
+.mainInputs{
+  margin: 20px 0;
+}
+
+.magnitudes select{
+  margin: 0 30px;
+}
+
+.toDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

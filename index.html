@@ -16,23 +16,23 @@
     <h1>Unit Converter</h1>
     <div class="units">
       <select name="unitSelector" id="unitSelector">
-        <option value="lenght">Select Unit</option>
+        <option value="select">Select Unit</option>
         <option value="lenght">Lenght</option>
         <option value="temperature">Temperature</option>
         <option value="weight">Weight</option>
       </select>
     </div>
-    <div class="row">
+    <div class="row mainInputs">
       <div class="quantity col">
-        <input type="number">
+        <input id="quantityInput" type="number" disabled>
       </div>
       <div class="equals col">=</div>
-      <div class="result col"></div>
+      <div class="result col">
+        <input id="resultInput" type="number" disabled>
+      </div>
     </div>
 
-    <div class="row magnitudes">
-      <div class="test">
-      </div>
+    <div class="row justify-content-between magnitudes">
     </div>
   
   </div>

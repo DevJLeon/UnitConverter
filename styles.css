@@ -8,9 +8,10 @@ body{
   position: absolute;
   left: 0;
   top: 0;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 1300px;
   margin: 0;
+
 }
 
 .container{

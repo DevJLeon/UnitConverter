@@ -41,7 +41,7 @@ $unitSelector.addEventListener("input",(e)=>{
             <option value="meter" selected>Meter</option>
             <option value="decimeter">Decimeter</option>
             <option value="centimeter">Centimeter</option>
-            <option value="milimeter">Milimeter</option>
+            <option value="millimeter">millimeter</option>
         `
     }else if((e.target.value)=="weight"){
         $quantityInput.disabled = false;
@@ -54,7 +54,7 @@ $unitSelector.addEventListener("input",(e)=>{
             <option value="gram" selected>Gram</option>
             <option value="decigram">Dedicram</option>
             <option value="centigram">Centigram</option>
-            <option value="miligram">Miligram</option>
+            <option value="milligram">milligram</option>
         `
     };
 
@@ -81,6 +81,19 @@ $quantityInput.addEventListener("input", (e)=>{
         distance($inputSelect,$outputSelect,$quantityInput,$resultInput)
     }else if($unitSelector.value=="weight"){
         mass($inputSelect,$outputSelect,$quantityInput,$resultInput)
+    }
+})
+
+$resultInput.addEventListener("input", (e)=>{
+    const $inputSelect = document.querySelector(".inputSelect");
+    const $outputSelect = document.querySelector(".outputSelect");
+
+    if($unitSelector.value=="temperature"){
+        temperature($outputSelect,$inputSelect,$resultInput,$quantityInput)
+    }else if($unitSelector.value=="lenght"){
+        distance($outputSelect,$inputSelect,$resultInput,$quantityInput)
+    }else if($unitSelector.value=="weight"){
+        mass($outputSelect,$inputSelect,$resultInput,$quantityInput)
     }
 })
 
